@@ -170,6 +170,7 @@ a.nav-link:hover{
 }
 
 .content_title{
+    display: inline-block;
     margin-top: 30px;
     margin-bottom: 40px;
     margin-right: 50px;
@@ -218,15 +219,17 @@ a.nav-link:hover{
 }
 
 .source_code{
+    display: inline-block;
     margin: 20px 20px 20px 20px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 4px 20px 4px 20px;
     border-radius: 20px;
-    border: 1.5px solid rgb(255, 255, 255);
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
 
 .source_code:hover{
-    background-color: white;
-    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: #1b1b1b;
+    color: white;
 }
