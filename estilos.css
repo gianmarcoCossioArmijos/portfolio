@@ -123,13 +123,17 @@ a.nav-link:hover{
     margin-top: 20px;
     margin-left: 150px;
     margin-right: 150px;
+    display: grid;
+    grid-template-areas: 'title title'
 }
 
 .projects_title{
+    grid-area: title;
     margin-bottom: 50px;
 }
 
 .card{
+    display: inline-block;
     width: 400px;
     height: 450px;
     border-radius: 15px;
