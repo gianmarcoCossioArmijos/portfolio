@@ -11,99 +11,109 @@ body {
     font-size: 14px;
 }
 
+main {
+    padding: 3rem 5rem 3rem 5rem;
+}
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
-ul, li {
+li, la {
     list-style: none;
 }
 
 /* index styles */
 
-.nav-link:hover{
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 30px;
-}
-
-.navbar-container{
+.navbar-container {
 	display: flex;
+    flex-direction: row;
 	align-items: center;
     justify-content: space-between;
 
-    padding: 0.8rem;
+    padding: 0.8rem 2rem 0.8rem 2rem;
 
 	font-size: 17px;
 	border: 1.5px solid rgb(255, 255, 255);
     border-radius: 30px;
 }
 
-.navbar-items-container a {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-}
-
-.navbar-items-container a:hover {
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 300ms;
-}
-
-.navbar-brand img {
-    width: 42px;
-    margin-left: 0.5rem;
-}
-
-/* projects styles */
-
-.content{
-    padding: 2rem 6rem 2rem 6rem;
-}
-
-.content_header {
-    width: 80%;
+.navbar-container nav {
     display: flex;
     flex-direction: row;
-
-    justify-content: space-between;
-    margin: auto;
-    padding: 2rem 0 2rem 0;
+    gap: 1.5rem;
 }
 
-.content_header a {
-    padding: 0.6rem 2rem 0.6rem 2rem;
-    border-radius: 20px;
-
-    background-color: white;
-    border: 1.5px solid rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+.navbar-container nav a:hover {
+    font-weight: bold;
+    transition: 400ms;
 }
 
-.content_header a:hover{
-    border: 1.5px solid rgb(255, 255, 255);
-    background-color: #1b1b1b;
-    color: white;
+.navbar-container img {
+    height: 40px;
+    width: 40px;
 }
 
-.content_description {
-    max-width: 80%;
+.content {
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-    margin: auto;
     gap: 2rem;
-    padding: 2rem 0 2rem 0;
+    max-width: 80%;
+    margin: auto;
+}
+
+.content_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content_title h3 {
+    background-color: white;
+    border: 1.5px solid white;
+    border-radius: 15px;
+    color: black;
+
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.content_title h3:hover {
+    background-color:  #0c0c0c;
+    border: 1.5px solid white;
+    border-radius: 15px;
+    color: white;
+    transition: 400ms;
+
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .gallery img {
-    width: 250px;
-    height: 250px;
+    max-width: 300px;
+    margin: auto;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
+    padding: 5rem 0 5rem 0;
+    justify-content: center;
+    background-color: rgb(6, 6, 6);
+
     border-radius: 30px;
+    border: 1.5px solid rgb(255, 255, 255);
 }

@@ -13,48 +13,37 @@
 
 <body>
 
-<div class="container">
-
-    <!-- inicio -->
-
-    <div class="inicio-container">
-
         <!-- navbar -->
 
-        <nav class="navbar-container">
-            <div class="logo-container">
-                <a href="#" class="navbar-brand">
-                    <img src="logo_blanco.png" class="img-logo">
+        <header class="navbar-container">
+                <a href="#">
+                    <img src="logo_blanco.png">
                 </a>
-            </div>
-            <div class="navbar-items-container">
-                <a data-en href="index.html" class="nav-link">home</a>
-                <a data-en href="#about" class="nav-link">about</a>
-                <a data-en href="#projects" class="nav-link">projects</a>
-                <a data-en href="#contact" class="nav-link">contact</a>
-            </div>
-        </nav>
+            <nav>
+                <a data-en href="index.html">home</a>
+                <a data-en href="#about">about</a>
+                <a data-en href="#projects">projects</a>
+                <a data-en href="#contact">contact</a>
+            </nav>
+        </header>
 
         <!-- imagenes inicio -->
 
-        <div class="images-container">
-            <div class="img-nombre-container">
-                <img class="img-nombre" src="nombre.png" />
-                <p class="backend_developer">Backend Developer</p>
+    <main>
+
+        <section class="images-container">
+            <div class="img-nombre">
+                <img src="nombre.png" />
+                <p>Backend Developer</p>
             </div>
-            <div class="img-presentacion-container">
-                <img class="img-presentacion" src="imgaen_inicio.png" />
-            </div>
-        </div>
-    </div>
+            <img src="imgaen_inicio.png" />
+        </section>
 
     <!-- about -->
 
-    <div class="about" >
-        <div class="about_text_div" id="about">
-            <div class="about_title">
-                <h1>About me</h1>
-            </div>
+    <section class="about" >
+        <div class="about_text" id="about">
+            <h1>About me</h1>
             <p>
                 Soy Gianmarco Armijos Cossio, un estudiante de informática y entusiasta de la tecnología. 
                 Me enamoré de las computadoras cuando estaba en la escuela comenzando a explorar programas 
@@ -63,54 +52,68 @@
                 tarde comencé a aprender programas de edición de video y obtuve algunos proyectos de diseño 
                 independiente. Actualmente estoy trabajando en proyectos web independientes y entrenando 
                 en mis habilidades de Java Backend.
+            </p>
         </div>
-        <div class="about_img_div">
-            <img src="perfil_img.png" class="about_img">
-        </div>
-    </div>
+
+        <img src="perfil_img.png">
+    </section>
 
     <!-- projects -->
 
-    <div class="projects" id="projects">
+    <section class="projects" id="projects">
 
-        <div class="projects_title">
-            <h1>Projects</h1>
-        </div>
+        <h1>Projects</h1>
+
+        <div class="cards">
 
         <!-- key saver -->
-
         <div class="card">
-            <div class="card_img_container">
+            <div>
                 <a href="keysaver.html" target="_blank">
-                    <img src="card_keysaver.png" class="card_img">
+                    <img src="card_keysaver.png">
                 </a>
             </div>
 
             <div class="card_text">
-                <h3 class="card_title">Key Saver</h3>
-                <span class="card_info">Generador de contraseñas y minisistema gestor</span>
+                <h3>Key Saver</h3>
+                <span>Generador de contraseñas y minisistema gestor</span>
+                <p>Java / Servlets / JSP / JSTL / MySQL</p>
             </div>
         </div>
 
         <!-- tres en raya -->
 
         <div class="card">
-            <div class="card_img_container">
+            <div>
                 <a href="tresenraya.html" target="_blank">
-                    <img src="tresenraya_3.png" class="card_img">
+                    <img src="tresenraya_3.png">
                 </a>
             </div>
 
             <div class="card_text">
-                <h3 class="card_title">Tres en Raya</h3>
-                <span class="card_info">Juego tres en raya o tic tac toe</span>
+                <h3>Tres en Raya</h3>
+                <span>Juego tres en raya o tic tac toe</span>
+                <p>Java / Spring / JSP / JSTL</p>
             </div>
         </div>
 
-    </div>
+        </div>
 
-    <script src="codigo.js"></script>
-</div>
+    </section>
+
+    </main>
+
+    <footer class="contact" id="contact">
+
+        <a href="https://www.linkedin.com/in/gianmarco-armijos-cossio-b7866925b/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill:#fff"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"/></svg>
+        </a>
+
+        <a href="gianmarcocossioarmijos.github.io/portfolio/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill:#fff"><path d="M12.74 2.32a1 1 0 0 0-1.48 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1 1 1 0 0 0-.26-.68z"/></svg>
+        </a>
+
+    </footer>
 
 </body>
 
