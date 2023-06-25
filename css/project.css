@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0c0c;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* index styles */
+
+.nav-link:hover{
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.navbar-container{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+
+    padding: 0.8rem;
+
+	font-size: 17px;
+	border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.navbar-items-container a {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.navbar-items-container a:hover {
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.navbar-brand img {
+    width: 42px;
+    margin-left: 0.5rem;
+}
+
+/* projects styles */
+
+.content{
+    padding: 2rem 6rem 2rem 6rem;
+}
+
+.content_header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+.content_header a {
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    border-radius: 20px;
+
+    background-color: white;
+    border: 1.5px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.content_header a:hover{
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.content_description {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
