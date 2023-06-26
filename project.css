@@ -53,7 +53,7 @@ li, la {
 }
 
 main:has(.aside--open) {
-    --width: 100%;
+    --width: 0;
 }
 
 .aside_menu {
@@ -61,7 +61,7 @@ main:has(.aside--open) {
     top: 12%;
     left: 0;
     right: 0;
-    bottom: var(--width, 0);
+    bottom: var(--width, 100%);
 
     display: flex;
     justify-content: center;
