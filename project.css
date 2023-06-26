@@ -39,17 +39,6 @@ li, la {
     border-radius: 30px;
 }
 
-.navbar-container nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-}
-
-.navbar-container nav a:hover {
-    font-weight: bold;
-    transition: 400ms;
-}
-
 .navbar-container img {
     height: 40px;
     width: 40px;
@@ -61,6 +50,38 @@ li, la {
     gap: 2rem;
     max-width: 80%;
     margin: auto;
+}
+
+main:has(.aside--open) {
+    --width: 100%;
+}
+
+.aside_menu {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    bottom: var(--width, 0);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+	border: 1.5px solid rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 30px;
+
+    font-size: 17px;
+    text-align: center;
+
+    overflow: hidden;
+    transition: 400ms;
+}
+
+.aside_menu a:hover {
+    font-weight: bold;
+    transition: 400ms;
 }
 
 .content_title {
@@ -112,8 +133,16 @@ li, la {
     
     padding: 5rem 0 5rem 0;
     justify-content: center;
-    background-color: rgb(6, 6, 6);
+    background: black center url("/fondo_bw.jpg") no-repeat;
+    background-size: cover;
 
     border-radius: 30px;
     border: 1.5px solid rgb(255, 255, 255);
+}
+
+.contact p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
